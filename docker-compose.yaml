@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  # Node api service
+  api:
+    container_name: SubSpaceApi
+    build: ./
+    ports:
+      - 5000:5000
+    environment:
+      PORT: 5000
+    restart: always
